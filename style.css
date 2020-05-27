@@ -1,0 +1,73 @@
+h1 {
+    text-decoration: solid;
+    color: black;
+    opacity: 2;
+    height:50%;
+}
+p{font-size: 15px;
+color: black;}
+
+body {
+    border-style: none;
+    background-color: bisque;
+}
+
+
+h2 {
+    text-decoration: solid;
+    color: black;
+    
+} 
+.logo tr td {color: black;
+background-color: red;
+text-align:center;}
+
+ @media(min-width:1000px) and (max-width:1400px)/*for large devices */
+ {
+    body{background-attachment: fixed;} 
+    h1{
+        color: black;
+    text-align: center;}
+  .menudropdown{width:40px;
+float:center;
+height: 40%;}
+    
+ }
+ 
+ @media(min-width:770px) and (max-width:900px)/*for medium devies*/
+ {
+    body{background-attachment: fixed;} 
+    h1{color:black;}
+     .menudropdown ul li{
+    align-items: center;}
+     .heading h2{text-align: center;}
+     .heading{text-overflow: initial;
+   }
+    }
+
+    @media(min-width:500px) and (max-width:768px)/*for tablets */
+       {
+        h1{width: 70px;
+        text-align: unset;}
+        .menudropdown{align-items: center;
+        width: 50px;}
+        .menudropdown ul li{
+            align-items: 50px;
+        }   
+       
+       }
+
+    @media(min-width:320px) and (max-width:480px)/*for small devices*/
+    {
+        body{background-attachment: fixed;}
+        h1{color:black;}
+        .heading h2 {display:block;
+        text-align: center;}
+        .heading{text-overflow: initial;
+    }
+    }
+    .heading p{color: white;}
+    @media(max-width:319px)
+    {    
+  
+    }

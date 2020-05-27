@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+   body{background: url("web6.jpg")  no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-clip: border-box;
+        background-position: center;
+        background-origin: border-box;
+        background-attachment: fixed;
+        display: block;}
+        .heading{
+            color: white;
+        }
+        .tutorial{display: flex;}
+           .tutorial ul li iframe{display: flex;}
+
+        @media(max-width:1500px)/*for large screen*/
+        {
+            body{display: block;}
+        }
+        @media(min-width: 600px;) and (max-width: 800px;)/*for medium devices*/
+        {
+            body{display:inherit;}
+        }
+        @media(min-width: 320px;) and (max-width: 500px;)/*for small devices*/
+        {
+            body{display:block;}
+        }
+</style>
+<body>
+    <div class="heading">
+        <center><h1>VIDEO TUTORIALS</h1></center>
+    </div>
+    <div class="tutorial">
+        <ul>
+            <li><h3>GO</h3></li>
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/YS4e4q9oBaU?start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li><h3>PYTHON</h3></li>
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/videoseries?start=4&amp;list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/QXeEoD0pB3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li><h3>JAVASCRIPT</h3></li>
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/W6NZfCO5SIk?" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li><h3>HCL</h3></li>
+            <iframe width="250" height="250" src="https://www.youtube.com/embed/YZcDTTc_VJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

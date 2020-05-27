@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<style type="text/css">
+  *{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+  .site-header {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(57deg, #00c6a7, #1e4d92);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+  }
+  .logo {
+      width:50%; height: 100px; font-size: large;
+  }
+  .logo h1 {
+      line-height: 100px; padding-left: 50px; 
+  }
+section {
+    display: flex;
+}
+.leftside {
+    width: 40%; height: auto;
+    overflow: hidden; margin-top: 20px;
+}
+.leftside img { width: 500px; height: 250px;
+ z-index: 6;
+ }
+
+
+.rightside {
+    width: 55%; height: 300px; color: white;
+    text-align: center; margin-top: 80px; padding: 40px;
+}
+
+
+.rightside p { font-size: 1.1rem; padding: 30px 0;}
+
+
+.rightside button {
+    font-size: 18px; font-weight: bold; color: white; text-transform: uppercase;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92); border-radius: 4px;
+    padding: 20px 35px;
+}
+.rightside button:hover{
+    background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+.rightside button a {
+    text-decoration: none;
+    color: white;
+}
+@media (min-width:1000px) and (max-width:1500px)/* for large screen */
+{
+    .body{display: block;}
+}
+@media (max-width:775px)/* for tablets */
+{
+    .logo h1{color:black;}
+    .leftside img{clip-path: polygon(0% 0%, 100% 80% 100% 50%, 0% 100%);}
+    .rightside button{font-size: 14px;}
+    .rightside p { font-size: 12px; padding: 30px 0;}
+}
+@media (min-width:480px) and (max-width:700px)/* for medium device */
+{
+    .logo h1{color:black;}
+    .leftside img{clip-path: polygon(0% 0%, 100% 80% 100% 50%, 0% 100%);}
+    .rightside button{font-size: 12px;}
+    .rightside p { font-size: 14px; padding: 30px 0;}
+
+}
+@media (min-width: 320px) and (max-width:480px)/* for small device */
+{
+    .logo h1{color:black;}
+    .rightside button{font-size: 10px;}
+    .rightside p { font-size: 14px; padding: 20px 0;}
+    .rightside {
+    width: 50%; height:100px; color: white;
+    text-align: center; margin-top: 50px; padding: 10px;
+}
+
+}
+</style>
+<body>
+    <header class="site-header">
+        <nav>
+            <div class="logo">
+                <h1>Tutorials</h1>
+            </div>
+        </nav>
+        <section>
+            <div class="leftside">
+               <img src="web4.jpg" width="450">
+            </div>
+            <div class="rightside">
+                <h1>HELLO PROGRAMMERS!</h1>
+                <p>if you dont know where to start progamming
+                </p>
+                <button><a href="document.html">START</a></button>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
